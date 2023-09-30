@@ -1,4 +1,5 @@
 from flask import Flask, request, jsonify, abort
+import argparse
 
 app = Flask(__name__)
 
@@ -91,4 +92,8 @@ def not_found(error):
     return jsonify({"error": True, "message": message}), 404
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    parser = argparse.ArgumentParser(description="Run a Flask web server.")
+    parser.add_argument("--port", default=6000, help="Port to run the server on.")
+    args = parser.parse_args()
+
+    app.run(debug=True, host="0.0.0.0", port=args.port)

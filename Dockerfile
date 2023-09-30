@@ -11,3 +11,5 @@ ENV FLASK_ENV=development
 COPY . .
 
 EXPOSE 6000
+
+ENTRYPOINT [ "python", "main.py", "--port=6000" ]
