@@ -1,11 +1,11 @@
 version: '3.8'
 
 services:
-  flask-api:
-    container_name: flask-api
+  basic-api:
+    container_name: basic-api
     build: 
       context: .
-      dockerfile: ./Dockerfile
+      dockerfile: ./examples/basic/Dockerfile
     ports:
       - "6000:6000"
     stdin_open: true
