@@ -25,6 +25,7 @@ cd simple-python-api
 
 2. Install the required packages:
 ```bash
+cd examples/basic # Or whatever example you want to run
 pip install -r requirements.txt
 ```
 
@@ -32,6 +33,14 @@ pip install -r requirements.txt
 ```bash
 python main.py --port=1234 # Port is optional
 ```
+
+### Examples
+Explore various examples in the examples directory:
+- [Basic](https://github.com/CleytonBonamigo/simple-python-api) - [Post explaining](https://medium.com/@CleytonBonamigo/building-a-flask-api-a-step-by-step-guide-e73345717b52)
+    - Basic CRUD operations for users.
+    - In-memory database for demonstration purposes.
+    - Error handling and validation.
+    - Docker integration for containerization.
 
 ### Docker Usage
 
