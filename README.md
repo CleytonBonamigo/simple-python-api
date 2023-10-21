@@ -25,7 +25,7 @@ cd simple-python-api
 
 2. Install the required packages:
 ```bash
-cd examples/basic # Or whatever example you want to run
+cd examples/flask/in-memory # Or whatever example you want to run
 pip install -r requirements.txt
 ```
 
