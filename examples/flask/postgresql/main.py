@@ -11,3 +11,5 @@ conn = psycopg2.connect(
     password="yourpassword",
     host="localhost"
 )
+
+# just a test
